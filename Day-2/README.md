@@ -368,7 +368,84 @@ Stores the result in memory address `x23 + 8`.
 
 ---
 
-## LAB 
+## 10 LAB Compile, Simulate and Trace a RISC-V Program
+
+
+## 1. Objective
+
+- Compile C and Assembly files for RV32IM.
+- Understand startup code and `firmware.hex`.
+- Read hexadecimal instructions and disassembly.
+- Simulate the RISC-V core using `rv32im.sh`.
+- Understand program output and TRAP behaviour.
+
+
+## 2. Program Execution Flow
+
+```text
+1to9_custom.c + load.S
+          |
+          v
+    Compile and Link
+          |
+          v
+        ELF File
+          |
+          v
+    firmware.hex
+          |
+          v
+   RISC-V Simulation
+          |
+          v
+   Program Output + TRAP
+```
+
+## 4. Source Code Understanding
+
 ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-2/code.png)
+- `main()` passes arguments to the assembly function `load()`.
+- `load()` performs the summation using registers.
+- `printf()` displays the result.
+- Startup code initialises the stack pointer and transfers control to `main()`.
+
+## 5. Run the Simulation
+
+```bash
+chmod 777 rv32im.sh
+./rv32im.sh
+```
+
+**Expected Output:**
+
+```text
+Sum of number from 1 to 2 is 3
+TRAP
+```
+![Image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-2/output.png)
+
+**Explanation:**
+- `load(0, 3)` calculates the sum of 0 + 1 + 2 = 3.
+- `printf()` displays the result.
+- `TRAP` indicates program termination through the simulator's trap mechanism. It is not an error in this workshop.
+
+## 6. Inspect Firmware Image
+
+```bash
+vim firmware.hex
+```
+
+![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-2/firmwave.png)
+
+```bash
+vim firmware32.hex
+```
+
+![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-2/bitstream.png)
+
+
+
+
+**Lab Outcome:** Successfully compiled, simulated and traced a RISC-V RV32IM program using C, Assembly and a hardware simulation model.
 
 
