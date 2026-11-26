@@ -39,7 +39,7 @@ Adds the values in registers `x1` and `x2` and stores the result in `x5`.
 ![Image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/architecutre.png)
 
 ### Compiler
-A compiler converts high-level programming languages into lower-level instructions.
+A compiler converts high-level programming languages (C/C++/java/python) into lower-level instructions (Assembly Instruction).
 
 Example:
 ```c
