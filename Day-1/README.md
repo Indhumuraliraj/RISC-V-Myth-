@@ -323,15 +323,17 @@ Add 1    = 11111011
 case 1: within Limit 
 
 | ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_64_code.png) | ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_64_output.png) |
+|:---:|:---:|
 
 case 2: limit exceed
 
 |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_65_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_65_output.png) |
+|:---:|:---:|
 
 case 3: negative value
 
 |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_neg_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_neg_output.png) |
-
+|:---:|:---:|
 
 
 ## 2. Signed Integer – Maximum and Minimum Values
@@ -348,6 +350,7 @@ case 3: negative value
 | Maximum | 9223372036854775807 |
 
 |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/signed_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/signed_output.png) |
+|:---:|:---:|
 
 ## 7. Signed vs Unsigned
 
