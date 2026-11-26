@@ -305,8 +305,8 @@ Add 1    = 11111011
 
 ---
 
-## 7. LAB
-# Lab – RV64 Integer Range and Overflow
+
+## Lab 2 – RV64 Integer Range and Overflow
 
 ## 1. Unsigned Integer – Value 64
 
