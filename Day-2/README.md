@@ -21,7 +21,7 @@ It specifies:
 ---
 
 ## 2. ABI – Layered Architecture
-![image]()
+![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-2/ABI.png)
 
 The ABI acts as a contract between software and hardware.
 
@@ -369,6 +369,6 @@ Stores the result in memory address `x23 + 8`.
 ---
 
 ## LAB 
-![image]()
+![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-2/code.png)
 
 
