@@ -36,7 +36,7 @@ Adds the values in registers `x1` and `x2` and stores the result in `x5`.
 ---
 
 ## 2. From Application Software to Hardware
-![Image]()
+![Image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/architecutre.png)
 
 ### Compiler
 A compiler converts high-level programming languages into lower-level instructions.
@@ -153,7 +153,7 @@ Output:
 ```text
 Sum of numbers from 1 to 5 is 15
 ```
-![image]()
+![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/gcc.png)
 ## 2. RISC-V GCC Compilation
 
 Compile using RV64I architecture:
@@ -167,7 +167,7 @@ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ```bash
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ```
-
+![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/risc.v.png)
 ### Compiler options
 
 | Option | Description |
@@ -217,7 +217,7 @@ Start Spike in debug mode:
 spike -d pk sum1ton.o
 ```
 ---
-![Image]()
+![Image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/debug.png)
 
 
 
@@ -321,11 +321,11 @@ Add 1    = 11111011
 | Maximum | 18446744073709551615 |
 
 case 1: within Limit 
-|  ![image]() |  ![image]() |
+|  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_64_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_64_output.png) |
 case 2: limit exceed
-|  ![image]() |  ![image]() |
+|  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_65_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_65_output.png) |
 case 3: negative value
-|  ![image]() |  ![image]() |
+|  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_neg_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_neg_output.png) |
 
 
 
@@ -342,7 +342,8 @@ case 3: negative value
 | Minimum | -9223372036854775808 |
 | Maximum | 9223372036854775807 |
 
-|  ![image]() |  ![image]() |
+|  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/signed_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/signed_output.png
+) |
 
 ## 7. Signed vs Unsigned
 
