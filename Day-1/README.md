@@ -321,10 +321,15 @@ Add 1    = 11111011
 | Maximum | 18446744073709551615 |
 
 case 1: within Limit 
-|  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_64_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_64_output.png) |
+
+| ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_64_code.png) | ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_64_output.png) |
+
 case 2: limit exceed
+
 |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_65_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_65_output.png) |
+
 case 3: negative value
+
 |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_neg_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/unsigned_limit_neg_output.png) |
 
 
@@ -342,8 +347,7 @@ case 3: negative value
 | Minimum | -9223372036854775808 |
 | Maximum | 9223372036854775807 |
 
-|  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/signed_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/signed_output.png
-) |
+|  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/signed_code.png) |  ![image](https://github.com/Indhumuraliraj/RISC-V-Myth-/blob/main/Day-1/signed_output.png) |
 
 ## 7. Signed vs Unsigned
 
