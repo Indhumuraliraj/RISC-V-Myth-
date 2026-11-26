@@ -48,7 +48,7 @@ int b = 20;
 int c = a + b;
 ```
 
-Possible RISC-V assembly:
+RISC-V assembly:
 ```asm
 li   x5, 10
 li   x6, 20
@@ -62,7 +62,7 @@ Example:
 ```asm
 add x5, x1, x2
 ```
-Output: 0000000000000000000000000000000000000000001000001000001010110011
+Machine code: 0000000000000000000000000000000000000000001000001000001010110011
 
 ### Linker
 Combines object files and libraries to create an executable file.
@@ -100,9 +100,9 @@ riscv64-unknown-elf-objdump -d sum.o
 
 ---
 
-## 4. LAB
 
-# Lab 1: C Program to Compute Sum from 1 to N
+
+## Lab 1: C Program to Compute Sum from 1 to N
 
 ## Objective
 Write a C program to calculate the sum of natural numbers from 1 to N.
@@ -137,54 +137,7 @@ int main()
 
 ## Execution
 
-**Step 1: Compile the C program**
-
-```bash
-gcc sum1ton.c
-```
-
-**Step 2: Execute the program**
-
-```bash
-./a.out
-```
-
-## Output
-
-```text
-Sum of numbers from 1 to 5 is 15
-```
-![Image]()
-
-# Lab 1: Sum of 1 to N – RISC-V GCC and Spike Simulation
-
-## 1. Objective
-Write a C program to calculate the sum of natural numbers from 1 to N and execute it using:
-- Native GCC compiler
-- RISC-V GCC cross-compiler
-- RISC-V Spike simulator
-
-## 2. C Program – `sum1ton.c`
-
-```c
-#include <stdio.h>
-
-int main()
-{
-    int i, sum = 0, n = 5;
-
-    for (i = 1; i <= n; i++)
-    {
-        sum = sum + i;
-    }
-
-    printf("Sum of numbers from 1 to %d is %d\n", n, sum);
-
-    return 0;
-}
-```
-
-## 3. Native GCC Compilation
+## 1. Native GCC Compilation
 
 Compile:
 ```bash
@@ -201,7 +154,7 @@ Output:
 Sum of numbers from 1 to 5 is 15
 ```
 ![image]()
-## 4. RISC-V GCC Compilation
+## 2. RISC-V GCC Compilation
 
 Compile using RV64I architecture:
 
@@ -226,21 +179,21 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 | `-march=rv64i` | Target RV64I ISA |
 | `-o` | Specifies output filename |
 
-## 5. Disassembly
+## 3. Disassembly
 
 Convert machine code into readable RISC-V assembly instructions.
 
 ```bash
 riscv64-unknown-elf-objdump -d sum1ton.o
 ```
-![image]()
+
 To view output page by page:
 
 ```bash
 riscv64-unknown-elf-objdump -d sum1ton.o | less
 ```
-![image]()
-## 6. Spike Simulator
+
+## 4. Spike Simulator
 
 Spike is a RISC-V ISA simulator used to execute RISC-V compiled programs.
 
@@ -255,8 +208,8 @@ Expected output:
 ```text
 Sum of numbers from 1 to 5 is 15
 ```
-![image]()
-## 7. Spike Debugging
+
+## 6. Spike Debugging
 
 Start Spike in debug mode:
 
@@ -368,10 +321,11 @@ Add 1    = 11111011
 | Maximum | 18446744073709551615 |
 
 case 1: within Limit 
-**pfet.sch** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/pfet_sch.png)  
-**id** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/pfet_id.png) 
+|  ![image]() |  ![image]() |
 case 2: limit exceed
+|  ![image]() |  ![image]() |
 case 3: negative value
+|  ![image]() |  ![image]() |
 
 
 
@@ -388,7 +342,7 @@ case 3: negative value
 | Minimum | -9223372036854775808 |
 | Maximum | 9223372036854775807 |
 
-
+|  ![image]() |  ![image]() |
 
 ## 7. Signed vs Unsigned
 
